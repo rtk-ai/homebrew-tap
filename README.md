@@ -14,8 +14,10 @@ brew tap rtk-ai/tap
 |---------|-------------|
 | `rtk` | High-performance CLI proxy to minimize LLM token consumption |
 | `vox` | TTS CLI for macOS — local voice synthesis with Qwen and system say |
+| `icm` | Permanent memory for AI agents |
 
 ```bash
 brew install rtk
 brew install vox
+brew install icm
 ```
