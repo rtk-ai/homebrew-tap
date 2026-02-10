@@ -7,18 +7,18 @@ class Vox < Formula
   on_macos do
     on_intel do
       url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-x86_64-apple-darwin.tar.gz"
-      sha256 "801f93ac24c15c195c69c50e45d27a5ed736fd2b6e2f37cf62e751315d2efb69"
+      sha256 "14392d818d26063d65c15eb984082973370053558cbb119000f964f1c570664d"
     end
     on_arm do
       url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-aarch64-apple-darwin.tar.gz"
-      sha256 "a2e1deb6eaaad50049acaf9ea12e7b34c9546aa3be3b447c798ab1ac466c47b4"
+      sha256 "301461a19c0843683b161101f35f17cbca7a82c07c7632e83c3ad827924ddaf4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7041adff47de00ff61862980a56f66fe4547a7d6843d57fb1bb521c58f71a0f1"
+      sha256 "bbc5b520ae015c6b1ff43285b93e8dd41122f6a254379debbb3da7489abd2ae8"
     end
   end
 
