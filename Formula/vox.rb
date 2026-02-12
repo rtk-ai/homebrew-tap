@@ -1,24 +1,24 @@
 class Vox < Formula
   desc "Cross-platform TTS CLI — local voice synthesis with three backends"
   homepage "https://github.com/rtk-ai/vox"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-x86_64-apple-darwin.tar.gz"
-      sha256 "14392d818d26063d65c15eb984082973370053558cbb119000f964f1c570664d"
+      url "https://github.com/rtk-ai/vox/releases/download/v0.4.0/vox-x86_64-apple-darwin.tar.gz"
+      sha256 "46373117cf29ffe4588c5cb7c8575d1a0b47f453635ceebee06931b68b24ed32"
     end
     on_arm do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-aarch64-apple-darwin.tar.gz"
-      sha256 "301461a19c0843683b161101f35f17cbca7a82c07c7632e83c3ad827924ddaf4"
+      url "https://github.com/rtk-ai/vox/releases/download/v0.4.0/vox-aarch64-apple-darwin.tar.gz"
+      sha256 "57842ad63b74d55e9829653bcc67ebb0e8c22e0d6a65e88167d138659b622ad0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.3.1/vox-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bbc5b520ae015c6b1ff43285b93e8dd41122f6a254379debbb3da7489abd2ae8"
+      url "https://github.com/rtk-ai/vox/releases/download/v0.4.0/vox-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "273a10660a8de36a8e29fe20fae123587ae718954318c91f27b19324a811e78a"
     end
   end
 
