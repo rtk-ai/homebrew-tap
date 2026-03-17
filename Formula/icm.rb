@@ -1,28 +1,28 @@
 class Icm < Formula
   desc "Permanent memory for AI agents — MCP server with hybrid search"
   homepage "https://github.com/rtk-ai/icm"
-  version "0.5.0"
+  version "icm-v0.10.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/rtk-ai/icm/releases/download/v0.5.0/icm-x86_64-apple-darwin.tar.gz"
-      sha256 "66b89aa63c5efec7f89efdf05221b072bc435c800e6ad49cd8b23408af4f98a3"
+      url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.1/icm-x86_64-apple-darwin.tar.gz"
+      sha256 "2fc7f3d332e8c06e200ec021d9fbf103ea62f67ae996a884b93f01e0accce263"
     end
     on_arm do
-      url "https://github.com/rtk-ai/icm/releases/download/v0.5.0/icm-aarch64-apple-darwin.tar.gz"
-      sha256 "04c7480b26f447233ae09d9c4296bccd7e1a8f14f6a3f6b08e123f20bc3f4e2b"
+      url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.1/icm-aarch64-apple-darwin.tar.gz"
+      sha256 "3357cfa73ec184fc9dfa2e3e50f691dbdad09a4cfc1c22f7064f17c21cda1a80"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/rtk-ai/icm/releases/download/v0.5.0/icm-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c516b2f2f76edccff594f0f9dc9d02cbe4b33f80de2ee8f4222989f159a58407"
+      url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.1/icm-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ba5111e2c55fd7d920d543933b479c85fede240647f68b63decd15b2a155b4b0"
     end
     on_arm do
-      url "https://github.com/rtk-ai/icm/releases/download/v0.5.0/icm-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bbd8a10193c3f5de395018b0517ebc8990863793b00a69f3bf57948f98a5d42e"
+      url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.1/icm-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "dde39efa0a27ae9bb04da27e3707fd140fe648b3e49a08553b2b2b6fcac187cd"
     end
   end
 
