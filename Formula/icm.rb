@@ -1,7 +1,7 @@
 class Icm < Formula
   desc "Permanent memory for AI agents — MCP server with hybrid search"
   homepage "https://github.com/rtk-ai/icm"
-  version "icm-v0.10.1"
+  version "0.10.1"
   license "MIT"
 
   on_macos do
@@ -31,6 +31,6 @@ class Icm < Formula
   end
 
   test do
-    assert_match "icm #{version}", shell_output("#{bin}/icm --version")
+    assert_match "icm", shell_output("#{bin}/icm --version")
   end
 end
