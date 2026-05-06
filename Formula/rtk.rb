@@ -1,21 +1,21 @@
 class Rtk < Formula
   desc "Rust Token Killer - High-performance CLI proxy to minimize LLM token consumption"
   homepage "https://www.rtk-ai.app"
-  version "0.38.0"
+  version "0.39.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/rtk-ai/rtk/releases/download/v0.38.0/rtk-aarch64-apple-darwin.tar.gz"
-    sha256 "3896c8c43d02641ddaad88e91a9569233f35e4e938a3bf7882656dc73928f97a"
+    url "https://github.com/rtk-ai/rtk/releases/download/v0.39.0/rtk-aarch64-apple-darwin.tar.gz"
+    sha256 "0d140babfba54c37298b32e7b2ad1f21c72179b22bbcdf01c9cd66bb9ae28855"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rtk-ai/rtk/releases/download/v0.38.0/rtk-x86_64-apple-darwin.tar.gz"
-    sha256 "f05bf6258239898cf57467fb043799527ebe3d5258e93f290f84c8b7f410e359"
+    url "https://github.com/rtk-ai/rtk/releases/download/v0.39.0/rtk-x86_64-apple-darwin.tar.gz"
+    sha256 "c3bb225d69c72a1a190f5d341b3958bf923c7242874627ef2d9f802d3743ff5c"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/rtk-ai/rtk/releases/download/v0.38.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "2e171f1d1c76086bb447e372d9332869d2cd3cc106c08c6e5fbd102b12e91ad9"
+    url "https://github.com/rtk-ai/rtk/releases/download/v0.39.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "68fd34cbff46856826a092c261d67b1b80b579ef6c8a0400c0089e14325e709d"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rtk-ai/rtk/releases/download/v0.38.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "9bafb356450fb0f66a7f2d68d0468d1b1e270163f1620574e67a4c8f816d9610"
+    url "https://github.com/rtk-ai/rtk/releases/download/v0.39.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "06e582ba1996ef03e76a441b9896aba79dd1b746ce539d228296c681b1c5401c"
   end
 
   def install
