@@ -7,22 +7,22 @@ class Icm < Formula
   on_macos do
     on_intel do
       url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.56/icm-x86_64-apple-darwin.tar.gz"
-      sha256 "ddc04fa15f5c78188b491eac01be7124e5888878f0ca328b679da66074808ae5"
+      sha256 "5c20d1ea56d2aa60f791da7f5f7bca79b4c218813289bdfb106aec6c7dbbff04"
     end
     on_arm do
       url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.56/icm-aarch64-apple-darwin.tar.gz"
-      sha256 "d3776bad836a339dd36a171e1a470fa66f3aaac2b849490811508f694e62098c"
+      sha256 "44ef0ee1a4cabc0a81f77592867d33136dccd9e1ba620e87aae7f28854f8de98"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.56/icm-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "53e9ff8af9227a7629200c305a45557449be46d7f2379f3c82242b2c6b99da1c"
+      sha256 "e5620198c0ce624c015293ca72deacca1c592560b8abe296fff800c4f2baece9"
     end
     on_arm do
       url "https://github.com/rtk-ai/icm/releases/download/icm-v0.10.56/icm-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b376dea60a150df43a191ed56f42df487edfcd7449e07f4230f3ac9d615dd4bb"
+      sha256 "109238c98dbed08ba52c7f6f8785106fefcc2be93c68599ed7605a5f40924172"
     end
   end
 
