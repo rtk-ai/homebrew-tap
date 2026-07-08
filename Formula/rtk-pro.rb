@@ -7,19 +7,22 @@ class RtkPro < Formula
   desc "Rust Token Killer PRO - CLI proxy with Shield, Cloud sync, and secrets detection"
   homepage "https://www.rtk-ai.app"
   version "0.42.4"
-  # Proprietary: anonymous download, license activated at runtime via `rtk login`.
+  # Proprietary: anonymous download from the public rtk-pro-releases repo;
+  # the license is activated at runtime via `rtk login` (binary alone is inert).
 
+  # Published by the PRO release CI to github.com/rtk-ai/rtk-pro-releases.
+  # sha256s come from that release's checksums.txt / latest.json.
   if OS.mac? && Hardware::CPU.arm?
-    url "https://rtkproreleases.blob.core.windows.net/releases/v#{version}/rtk-pro-darwin-arm64.tar.gz"
+    url "https://github.com/rtk-ai/rtk-pro-releases/releases/download/v#{version}/rtk-pro-darwin-arm64.tar.gz"
     sha256 "REPLACE_WITH_DARWIN_ARM64_SHA256"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://rtkproreleases.blob.core.windows.net/releases/v#{version}/rtk-pro-darwin-amd64.tar.gz"
+    url "https://github.com/rtk-ai/rtk-pro-releases/releases/download/v#{version}/rtk-pro-darwin-amd64.tar.gz"
     sha256 "REPLACE_WITH_DARWIN_AMD64_SHA256"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://rtkproreleases.blob.core.windows.net/releases/v#{version}/rtk-pro-linux-arm64.tar.gz"
+    url "https://github.com/rtk-ai/rtk-pro-releases/releases/download/v#{version}/rtk-pro-linux-arm64.tar.gz"
     sha256 "REPLACE_WITH_LINUX_ARM64_SHA256"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://rtkproreleases.blob.core.windows.net/releases/v#{version}/rtk-pro-linux-amd64.tar.gz"
+    url "https://github.com/rtk-ai/rtk-pro-releases/releases/download/v#{version}/rtk-pro-linux-amd64.tar.gz"
     sha256 "REPLACE_WITH_LINUX_AMD64_SHA256"
   end
 
