@@ -1,28 +1,31 @@
 class Vox < Formula
-  desc "Cross-platform TTS CLI — local voice synthesis with three backends"
+  desc "Local text-to-speech and speech-to-text for AI coding agents"
   homepage "https://github.com/rtk-ai/vox"
-  version "0.16.0"
+  version "0.17.0"
   license "Apache-2.0"
 
+  # macOS: Apple Silicon only (the Metal build). There is no Intel Mac
+  # build: the ONNX runtime used by the piper backend has no prebuilt
+  # binary for x86_64-apple-darwin. The requirement below stops
+  # `brew install` on an Intel Mac with "The arm64 architecture is
+  # required for this software." The url is deliberately not wrapped
+  # in on_arm: without a url the formula would not even load on an
+  # Intel Mac, and the requirement could not speak.
   on_macos do
-    on_intel do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.16.0/vox-x86_64-apple-darwin.tar.gz"
-      sha256 ""
-    end
-    on_arm do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.16.0/vox-aarch64-apple-darwin.tar.gz"
-      sha256 "0261f6c9d94afc39c146f80df41a1a25ae125e5939f793353ff62a4324b38dc0"
-    end
+    url "https://github.com/rtk-ai/vox/releases/download/v0.17.0/vox-aarch64-apple-darwin.tar.gz"
+    sha256 "844200570d31143af55ba8ba321bd4eb88f15ef2e9eda01f3d0b806fb6b94ea0"
+
+    depends_on arch: :arm64
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.16.0/vox-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e05e4f59fd05e0e2cd0f01e31e839597d0c0b22fc3007566dfd8456c07bb8835"
+      url "https://github.com/rtk-ai/vox/releases/download/v0.17.0/vox-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "29e0086926af55146578f2a26f521d3cb12a369e7a99b57c819c150ad0b1d330"
     end
     on_arm do
-      url "https://github.com/rtk-ai/vox/releases/download/v0.16.0/vox-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "db4909ac871676ace9493a18e7f4279701a52b50cb9a2f9549d8c0ed110459d0"
+      url "https://github.com/rtk-ai/vox/releases/download/v0.17.0/vox-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a18f9a15c47daa64306ac02b50ab832947539b543e79468eb3674ed94799e5d3"
     end
   end
 
