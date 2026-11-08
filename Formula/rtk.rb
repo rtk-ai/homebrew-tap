@@ -1,23 +1,23 @@
 class Rtk < Formula
   desc "Rust Token Killer - High-performance CLI proxy to minimize LLM token consumption"
   homepage "https://www.rtk-ai.app"
-  version "1.1.0"
+  version "1.2.0"
   license all_of: ["Apache-2.0", "BUSL-1.1"]
 
   conflicts_with "rtk-oss", because: "both install the rtk binary"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-aarch64-apple-darwin.tar.gz"
-    sha256 "8da773b0954cf90b115ec95c4e4eb420f04c39de233c5db102246a6caf073ba7"
+    url "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-aarch64-apple-darwin.tar.gz"
+    sha256 "a2c411ffa49a8595b408c151ea47c9a812268924a76eaeecbc3a5065b02207ff"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-x86_64-apple-darwin.tar.gz"
-    sha256 "1e23e8b9542b58428e6409c49b1c3fb92c4c0d5125da72e80f002a46086a6c20"
+    url "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-x86_64-apple-darwin.tar.gz"
+    sha256 "1484ae6fffd0da180d65434eeca32e014a86a6e21dcfc7a0004fe82b7bb0a9b9"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "a5c00c3ab0129884bcb757d348afc1a650efa0f4f0769da97c341f28f89719ed"
+    url "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "f91a06e94e5fad7dfa87946c811a4bcbc500e6da119fd47033f2a8940bf64f93"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "9454ad1b9489daa57ab0a9f4ebe2faaf4dc82b8a0f26c9e5135151abd7c9378d"
+    url "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "70fee7b4a548c43dde94c77e2335550981b0bc2fb013691d8c8109b5bd0eda37"
   end
 
   def install
